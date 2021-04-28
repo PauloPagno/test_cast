@@ -1,0 +1,23 @@
+package br.com.cast.avaliacao.services;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+
+
+
+import br.com.cast.avaliacao.model.Curso;
+
+@Service
+public class CursoServices {
+	
+	private final AtomicLong counter = new AtomicLong();
+	
+	public Curso findById(String id) {
+		Curso curso = new Curso();
+		return curso;
+		
+		
+	}
+
+}

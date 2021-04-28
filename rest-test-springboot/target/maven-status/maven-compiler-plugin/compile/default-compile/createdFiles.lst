@@ -1,0 +1,17 @@
+br\com\cast\avaliacao\config\SwaggerConfig.class
+br\com\cast\avaliacao\exception\ResourceNotFoundException.class
+br\com\cast\avaliacao\exception\ExceptionResponse.class
+br\com\cast\avaliacao\model\vo\CursoVO.class
+br\com\cast\avaliacao\config\WebConfig.class
+br\com\cast\avaliacao\model\vo\CategoriaVO.class
+br\com\cast\avaliacao\services\CategoriaServices.class
+br\com\cast\avaliacao\exception\handler\CustomizeResponseEntityExceptionHandler.class
+br\com\cast\avaliacao\reposirory\CategoriaRepository.class
+br\com\cast\avaliacao\controller\CategoriaController.class
+br\com\cast\avaliacao\model\Categoria.class
+br\com\cast\avaliacao\Main.class
+br\com\cast\avaliacao\reposirory\CursoReposirory.class
+br\com\cast\avaliacao\converter\DozerConverter.class
+br\com\cast\avaliacao\model\Curso.class
+br\com\cast\avaliacao\controller\CursoController.class
+br\com\cast\avaliacao\services\CursoServices.class

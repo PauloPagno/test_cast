@@ -1,0 +1,54 @@
+package br.com.cast.avaliacao.services;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.cast.avaliacao.exception.ResourceNotFoundException;
+import br.com.cast.avaliacao.model.Curso;
+import br.com.cast.avaliacao.reposirory.CursoReposirory;
+
+@Service
+public class CursoServices {
+
+	@Autowired
+	CursoReposirory repository;
+
+	public Curso create(Curso curso) {
+
+		return repository.save(curso);
+	}
+
+	public List<Curso> findAll() {
+		return repository.findAll();
+	}
+	
+	public Curso findById(Long id) {
+		
+		return repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Curso não encontrato!") );
+
+	}
+
+	public Curso update(Curso curso) {
+
+		Curso curso = new Curso();
+		curso.setId(counter.incrementAndGet());
+		curso.setDescricao("Treinamento de Java");
+		curso.setDatainicio(new Date());
+		curso.setDatafim(new Date());
+		curso.setQuantidadeAlunos(10);
+		curso.setCategoria("Programação");
+		return curso;
+	}
+
+	public void delete(String id) {
+
+	}
+
+	
+
+}

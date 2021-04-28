@@ -1,0 +1,52 @@
+package br.com.cast.avaliacao.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.cast.avaliacao.exception.ResourceNotFoundException;
+import br.com.cast.avaliacao.model.Curso;
+import br.com.cast.avaliacao.reposirory.CursoReposirory;
+
+@Service
+public class CursoServices {
+
+	@Autowired
+	CursoReposirory repository;
+
+	public Curso create(Curso curso) {
+
+		return repository.save(curso);
+	}
+
+	public List<Curso> findAll() {
+		return repository.findAll();
+	}
+
+	public Curso findById(Long id) {
+
+		return repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Curso não encontrato!"));
+
+	}
+
+	public Curso update(Curso curso) {
+
+		Curso entity = repository.findById(curso.getId())
+				.orElseThrow(() -> new ResourceNotFoundException("Curso não encontrato!"));
+		entity.setDescricao(curso.getDescricao());
+		entity.setDatainicio(curso.getDatainicio());
+		entity.setDatafim(curso.getDatafim());
+		entity.setQuantidadeAlunos(curso.getQuantidadeAlunos());
+		entity.setCategoria(curso.getCategoria());
+		return repository.save(entity);
+	}
+
+	public void delete(Long id) {
+		Curso entity = repository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Curso não encontrato!"));
+
+		repository.delete(entity);
+	}
+
+}

@@ -1,0 +1,26 @@
+package br.com.cast.avaliacao.services;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+
+import br.com.cast.avaliacao.model.Curso;
+
+@Service
+public class CursoServices {
+
+	private final AtomicLong counter = new AtomicLong();
+
+	public Curso findById(String id) {
+		Curso curso = new Curso();
+		curso.setId(counter.incrementAndGet());
+		curso.setDescricao("Treinamento de Java");
+		curso.setDatainicio("02/05/2021");
+		curso.setDatafim("10/065/2021");
+		curso.setQuantidadeAlunos(10);
+		curso.setCategoria("Programação");
+		return curso;
+
+	}
+
+}

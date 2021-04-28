@@ -1,0 +1,17 @@
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\reposirory\CategoriaRepository.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\controller\CategoriaController.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\exception\ExceptionResponse.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\exception\ResourceNotFoundException.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\services\CursoServices.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\config\SwaggerConfig.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\services\CategoriaServices.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\model\vo\CategoriaVO.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\Main.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\controller\CursoController.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\model\vo\CursoVO.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\converter\DozerConverter.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\config\WebConfig.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\reposirory\CursoReposirory.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\exception\handler\CustomizeResponseEntityExceptionHandler.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\model\Curso.java
+C:\ws-eclipse\teste_cast\rest-test-springboot\src\main\java\br\com\cast\avaliacao\model\Categoria.java

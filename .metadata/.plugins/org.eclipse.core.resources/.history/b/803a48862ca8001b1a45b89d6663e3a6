@@ -1,0 +1,15 @@
+package br.com.cast.avaliacao.security.jwt;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service
+public class JwtTokenProvider {
+	
+	@Value("${security.jwt.token.secret-key:secret}")
+	private String secretKey ="secret";
+	
+	@Value("${security.jwt.token.secret-lenght:36000000}")
+	private long validityInMilliseconds = 36000000; //1h
+
+}

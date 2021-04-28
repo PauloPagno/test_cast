@@ -1,0 +1,25 @@
+package br.com.cast.avaliacao.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.cast.avaliacao.converter.DozerConverter;
+import br.com.cast.avaliacao.exception.ResourceNotFoundException;
+import br.com.cast.avaliacao.model.Curso;
+import br.com.cast.avaliacao.model.vo.CursoVO;
+import br.com.cast.avaliacao.reposirory.UserReposirory;
+
+@Service
+public class UserServices {
+
+	@Autowired
+	UserReposirory repository;
+
+	
+		
+		
+		
+
+}

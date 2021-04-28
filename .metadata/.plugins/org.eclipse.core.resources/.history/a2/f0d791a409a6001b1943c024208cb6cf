@@ -1,0 +1,63 @@
+package br.com.cast.avaliacao.services;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+
+import br.com.cast.avaliacao.model.Curso;
+
+@Service
+public class CursoServices {
+
+	private final AtomicLong counter = new AtomicLong();
+	
+	
+	public Curso create(Curso curso) {
+		
+		return curso;
+	}
+	
+	public Curso update(Curso curso) {
+		
+		return curso;
+	}
+
+	public Curso findById(String id) {
+		Curso curso = new Curso();
+		curso.setId(counter.incrementAndGet());
+		curso.setDescricao("Treinamento de Java");
+		curso.setDatainicio("02/05/2021");
+		curso.setDatafim("10/065/2021");
+		curso.setQuantidadeAlunos(10);
+		curso.setCategoria("Programação");
+		return curso;
+
+	}
+
+	public List<Curso> findAll() {
+		List<Curso> cursos = new ArrayList<Curso>();
+		for (int i = 0; i < 8; i++) {
+
+			Curso curso = mockCurso(i);
+			cursos.add(curso);
+
+		}
+
+		return cursos;
+
+	}
+
+	private Curso mockCurso(int i) {
+		Curso curso = new Curso();
+		curso.setId(counter.incrementAndGet());
+		curso.setDescricao("Descrição do Curso" + i);
+		curso.setDatainicio("Data Inicio"  + i);
+		curso.setDatafim("Data Fim"  + i);
+		curso.setQuantidadeAlunos(10  + i);
+		curso.setCategoria("Categoria"  + i);
+		return curso;
+	}
+
+}

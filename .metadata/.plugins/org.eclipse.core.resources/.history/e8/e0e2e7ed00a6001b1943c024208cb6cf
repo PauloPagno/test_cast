@@ -1,0 +1,24 @@
+package br.com.cast.avaliacao.services;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+
+import br.com.cast.avaliacao.model.Categoria;
+
+@Service
+public class CategoriaServices {
+	
+	private final AtomicLong counter = new AtomicLong();
+	
+	public Categoria findById(String codigo){
+		Categoria categoria = new Categoria();
+		categoria.setCodigo(counter.incrementAndGet());
+		categoria.setDescricao("Programação");
+		
+		return categoria;
+	}
+	
+	
+
+}

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Ely
+Build-Jdk: 11.0.6
+Implementation-Title: rest-test-springboot
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: br.com.cast.avaliacao
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/rest-test-springboot
+Created-By: Maven Integration for Eclipse
+
